@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feb0368a64f5484da30ac653e656dc8, type: 3}
+  m_Name: BFOffsets
+  m_EditorClassIdentifier: 
+  offsets:
+  - name: Idle
+    value: {x: 0.024999999, y: 0}
+  - name: NoteUp
+    value: {x: 0.145, y: -0.13499999}
+  - name: NoteRight
+    value: {x: 0.19, y: 0.035}
+  - name: NoteLeft
+    value: {x: -0.06, y: 0.03}
+  - name: NoteDown
+    value: {x: 0.049999997, y: 0.25}
+  - name: NoteUpMiss
+    value: {x: 0.145, y: -0.13499999}
+  - name: NoteRightMiss
+    value: {x: 0.14999999, y: -0.105}
+  - name: NoteLeftMiss
+    value: {x: -0.06, y: -0.12}
+  - name: NoteDownMiss
+    value: {x: 0.055, y: 0.095}
+  - name: HEY
+    value: {x: -0.035, y: -0.02}
+  - name: Death
+    value: {x: -0.185, y: -0.055}
+  - name: DeathLoop
+    value: {x: -0.185, y: -0.024999999}
+  - name: DeathConfirm
+    value: {x: -0.185, y: -0.345}
+  - name: IdleScared
+    value: {x: 0.02, y: 0}

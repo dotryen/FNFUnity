@@ -1,0 +1,58 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel DoShit
+#define SIZE 8
+#define RAND 2
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> result;
+float time;
+bool gray;
+float3 intensity;
+
+float nrand(float2 co) {
+    float t = time * 3;
+    return frac(sin(dot(co, float2(12.9898 * t, 78.233 * t))) * 43758.5453 + t);
+}
+
+// float rand(float2 co) {
+//     float t = time * 3;
+//     return frac((sin(dot(co, float2(12.345 * t, 67.890 * t))) * 12345.67890 + t));
+// }
+
+// float3 DiagonalRand(uint2 index) {
+//     return colors[floor(normalize(nrand(time + index.x + index.y, 16)) * 16)].xyz;
+// }
+
+[numthreads(SIZE, SIZE, 1)]
+void DoShit (uint3 id : SV_DispatchThreadID) {
+    uint2 dimensions = 0;
+    uint2 workAmount = 0;
+
+    result.GetDimensions(dimensions.x, dimensions.y);
+    workAmount = dimensions / SIZE;
+
+    uint2 offset = uint2(id.x * floor(workAmount.x), id.y * floor(workAmount.y));
+    uint2 index = 0;
+    float2 screenPos = 0;
+
+    for (uint y = 0; y < workAmount.y; y++) {
+        index.y = y + offset.y;
+
+        for (uint x = 0; x < workAmount.x; x++) {
+            index.x = x + offset.x;
+            screenPos = (index + float2(1, 1)) / dimensions;
+
+            float3 color = 0;
+            if (gray) {
+                float value = nrand(screenPos);
+                color = float3(value, value, value);
+            } else {
+                color = float3(nrand(screenPos - 1), nrand(screenPos), nrand(screenPos + 1));
+            }
+            color *= intensity;
+
+            result[index.xy] = float4(color.xyz, 1);
+        }
+    }
+}

@@ -1,0 +1,2807 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987217aed8e532a4491f3186afe1fcfc, type: 3}
+  m_Name: Normal
+  m_EditorClassIdentifier: 
+  speed: 2
+  order: 0
+  totalPlayerNoteCount: 613
+  playerTracks:
+  - shit:
+    - time: 47109.375
+      type: 0
+    - time: 47226.5625
+      type: 2
+    - time: 52968
+      type: 0
+    - time: 53085.1875
+      type: 1
+    - time: 53202.375
+      type: 1
+    - time: 53319.5625
+      type: 2
+    - time: 53437
+      type: 0
+    - time: 53554.1875
+      type: 1
+    - time: 53671.375
+      type: 2
+    - time: 53789
+      type: 0
+    - time: 53906.1875
+      type: 1
+    - time: 54023.375
+      type: 2
+    - time: 54140
+      type: 0
+    - time: 54257.1875
+      type: 2
+    - time: 54843.75
+      type: 0
+    - time: 54960.9375
+      type: 1
+    - time: 55078.125
+      type: 1
+    - time: 55195.3125
+      type: 2
+    - time: 55312.5
+      type: 0
+    - time: 55429.6875
+      type: 1
+    - time: 55546.875
+      type: 2
+    - time: 55664.0625
+      type: 0
+    - time: 55781.25
+      type: 1
+    - time: 55898.4375
+      type: 2
+    - time: 56015.625
+      type: 0
+    - time: 56132.8125
+      type: 2
+    - time: 58359.375
+      type: 0
+    - time: 58476.5625
+      type: 2
+    - time: 62109.375
+      type: 0
+    - time: 62226.5625
+      type: 2
+    - time: 67968.75
+      type: 0
+    - time: 68085.9375
+      type: 1
+    - time: 68203.125
+      type: 1
+    - time: 68320.3125
+      type: 2
+    - time: 68437.5
+      type: 0
+    - time: 68554.6875
+      type: 1
+    - time: 68671.875
+      type: 2
+    - time: 68789.0625
+      type: 0
+    - time: 68906.25
+      type: 1
+    - time: 69023.4375
+      type: 2
+    - time: 69140.625
+      type: 0
+    - time: 69257.8125
+      type: 2
+    - time: 69843.75
+      type: 0
+    - time: 69960.9375
+      type: 1
+    - time: 70078.125
+      type: 1
+    - time: 70195.3125
+      type: 2
+    - time: 70312.5
+      type: 0
+    - time: 70429.6875
+      type: 1
+    - time: 70546.875
+      type: 2
+    - time: 70664.0625
+      type: 0
+    - time: 70781.25
+      type: 1
+    - time: 70898.4375
+      type: 2
+    - time: 71015.625
+      type: 0
+    - time: 71132.8125
+      type: 2
+    - time: 73359.375
+      type: 0
+    - time: 73476.5625
+      type: 2
+    - time: 122109.375
+      type: 0
+    - time: 122226.5625
+      type: 2
+    - time: 127968.75
+      type: 0
+    - time: 128085.9375
+      type: 1
+    - time: 128203.125
+      type: 1
+    - time: 128320.3125
+      type: 2
+    - time: 128437.5
+      type: 0
+    - time: 128554.6875
+      type: 1
+    - time: 128671.875
+      type: 2
+    - time: 128789.0625
+      type: 0
+    - time: 128906.25
+      type: 1
+    - time: 129023.4375
+      type: 2
+    - time: 129140.625
+      type: 0
+    - time: 129257.8125
+      type: 2
+    - time: 129843.75
+      type: 0
+    - time: 129960.9375
+      type: 1
+    - time: 130078.125
+      type: 1
+    - time: 130195.3125
+      type: 2
+    - time: 130312.5
+      type: 0
+    - time: 130429.6875
+      type: 1
+    - time: 130546.875
+      type: 2
+    - time: 130664.0625
+      type: 0
+    - time: 130781.25
+      type: 1
+    - time: 130898.4375
+      type: 2
+    - time: 131015.625
+      type: 0
+    - time: 131132.8125
+      type: 2
+    - time: 133359.375
+      type: 0
+    - time: 133476.5625
+      type: 2
+    - time: 137109.375
+      type: 0
+    - time: 137226.5625
+      type: 2
+    - time: 142968.75
+      type: 0
+    - time: 143085.9375
+      type: 1
+    - time: 143203.125
+      type: 1
+    - time: 143320.3125
+      type: 2
+    - time: 143437.5
+      type: 0
+    - time: 143554.6875
+      type: 1
+    - time: 143671.875
+      type: 2
+    - time: 143789.0625
+      type: 0
+    - time: 143906.25
+      type: 1
+    - time: 144023.4375
+      type: 2
+    - time: 144140.625
+      type: 0
+    - time: 144257.8125
+      type: 2
+    - time: 144843.75
+      type: 0
+    - time: 144960.9375
+      type: 1
+    - time: 145078.125
+      type: 1
+    - time: 145195.3125
+      type: 2
+    - time: 145312.5
+      type: 0
+    - time: 145429.6875
+      type: 1
+    - time: 145546.875
+      type: 2
+    - time: 145664.0625
+      type: 0
+    - time: 145781.25
+      type: 1
+    - time: 145898.4375
+      type: 2
+    - time: 146015.625
+      type: 0
+    - time: 146132.8125
+      type: 2
+    - time: 148359.375
+      type: 0
+    - time: 148476.5625
+      type: 2
+    - time: 152109.375
+      type: 0
+    - time: 152226.5625
+      type: 2
+    - time: 157968.75
+      type: 0
+    - time: 158085.9375
+      type: 1
+    - time: 158203.125
+      type: 1
+    - time: 158320.3125
+      type: 2
+    - time: 158437.5
+      type: 0
+    - time: 158554.6875
+      type: 1
+    - time: 158671.875
+      type: 2
+    - time: 158789.0625
+      type: 0
+    - time: 158906.25
+      type: 1
+    - time: 159023.4375
+      type: 2
+    - time: 159140.625
+      type: 0
+    - time: 159257.8125
+      type: 2
+    - time: 159843.75
+      type: 0
+    - time: 159960.9375
+      type: 1
+    - time: 160078.125
+      type: 1
+    - time: 160195.3125
+      type: 2
+    - time: 160312.5
+      type: 0
+    - time: 160429.6875
+      type: 1
+    - time: 160546.875
+      type: 2
+    - time: 160664.0625
+      type: 0
+    - time: 160781.25
+      type: 1
+    - time: 160898.4375
+      type: 2
+    - time: 161015.625
+      type: 0
+    - time: 161132.8125
+      type: 2
+    - time: 163359.375
+      type: 0
+    - time: 163476.5625
+      type: 2
+    - time: 182109.375
+      type: 0
+    - time: 182226.5625
+      type: 2
+  - shit:
+    - time: 49218
+      type: 0
+    - time: 49335.1875
+      type: 1
+    - time: 49452.375
+      type: 1
+    - time: 49569.5625
+      type: 2
+    - time: 49687
+      type: 0
+    - time: 49804.1875
+      type: 1
+    - time: 49921.375
+      type: 2
+    - time: 50039
+      type: 0
+    - time: 50156.1875
+      type: 1
+    - time: 50273.375
+      type: 2
+    - time: 50390
+      type: 0
+    - time: 50507.1875
+      type: 2
+    - time: 51093.75
+      type: 0
+    - time: 51210.9375
+      type: 1
+    - time: 51328.125
+      type: 1
+    - time: 51445.3125
+      type: 2
+    - time: 51562.5
+      type: 0
+    - time: 51679.6875
+      type: 1
+    - time: 51796.875
+      type: 2
+    - time: 51914.0625
+      type: 0
+    - time: 52031.25
+      type: 1
+    - time: 52148.4375
+      type: 2
+    - time: 52265.625
+      type: 0
+    - time: 52382.8125
+      type: 2
+    - time: 54609.375
+      type: 0
+    - time: 54726.5625
+      type: 2
+    - time: 56718
+      type: 0
+    - time: 56835.1875
+      type: 1
+    - time: 56952.375
+      type: 1
+    - time: 57069.5625
+      type: 2
+    - time: 57187
+      type: 0
+    - time: 57304.1875
+      type: 1
+    - time: 57421.375
+      type: 2
+    - time: 57539
+      type: 0
+    - time: 57656.1875
+      type: 1
+    - time: 57773.375
+      type: 2
+    - time: 57890
+      type: 0
+    - time: 58007.1875
+      type: 2
+    - time: 58593.75
+      type: 0
+    - time: 58710.9375
+      type: 1
+    - time: 58828.125
+      type: 1
+    - time: 58945.3125
+      type: 2
+    - time: 59062.5
+      type: 0
+    - time: 59179.6875
+      type: 1
+    - time: 59296.875
+      type: 2
+    - time: 59414.0625
+      type: 0
+    - time: 59531.25
+      type: 1
+    - time: 59648.4375
+      type: 2
+    - time: 64218.75
+      type: 0
+    - time: 64335.9375
+      type: 1
+    - time: 64453.125
+      type: 1
+    - time: 64570.3125
+      type: 2
+    - time: 64687.5
+      type: 0
+    - time: 64804.6875
+      type: 1
+    - time: 64921.875
+      type: 2
+    - time: 65039.0625
+      type: 0
+    - time: 65156.25
+      type: 1
+    - time: 65273.4375
+      type: 2
+    - time: 65390.625
+      type: 0
+    - time: 65507.8125
+      type: 2
+    - time: 66093.75
+      type: 0
+    - time: 66210.9375
+      type: 1
+    - time: 66328.125
+      type: 1
+    - time: 66445.3125
+      type: 2
+    - time: 66562.5
+      type: 0
+    - time: 66679.6875
+      type: 1
+    - time: 66796.875
+      type: 2
+    - time: 66914.0625
+      type: 0
+    - time: 67031.25
+      type: 1
+    - time: 67148.4375
+      type: 2
+    - time: 67265.625
+      type: 0
+    - time: 67382.8125
+      type: 2
+    - time: 69609.375
+      type: 0
+    - time: 69726.5625
+      type: 2
+    - time: 71718.75
+      type: 0
+    - time: 71835.9375
+      type: 1
+    - time: 71953.125
+      type: 1
+    - time: 72070.3125
+      type: 2
+    - time: 72187.5
+      type: 0
+    - time: 72304.6875
+      type: 1
+    - time: 72421.875
+      type: 2
+    - time: 72539.0625
+      type: 0
+    - time: 72656.25
+      type: 1
+    - time: 72773.4375
+      type: 2
+    - time: 72890.625
+      type: 0
+    - time: 73007.8125
+      type: 2
+    - time: 73593.75
+      type: 0
+    - time: 73710.9375
+      type: 1
+    - time: 73828.125
+      type: 1
+    - time: 73945.3125
+      type: 2
+    - time: 74062.5
+      type: 0
+    - time: 74179.6875
+      type: 1
+    - time: 74296.875
+      type: 2
+    - time: 74414.0625
+      type: 0
+    - time: 74531.25
+      type: 1
+    - time: 74648.4375
+      type: 2
+    - time: 74765.625
+      type: 0
+    - time: 74882.8125
+      type: 2
+    - time: 124218.75
+      type: 0
+    - time: 124335.9375
+      type: 1
+    - time: 124453.125
+      type: 1
+    - time: 124570.3125
+      type: 2
+    - time: 124687.5
+      type: 0
+    - time: 124804.6875
+      type: 1
+    - time: 124921.875
+      type: 2
+    - time: 125039.0625
+      type: 0
+    - time: 125156.25
+      type: 1
+    - time: 125273.4375
+      type: 2
+    - time: 125390.625
+      type: 0
+    - time: 125507.8125
+      type: 2
+    - time: 126093.75
+      type: 0
+    - time: 126210.9375
+      type: 1
+    - time: 126328.125
+      type: 1
+    - time: 126445.3125
+      type: 2
+    - time: 126562.5
+      type: 0
+    - time: 126679.6875
+      type: 1
+    - time: 126796.875
+      type: 2
+    - time: 126914.0625
+      type: 0
+    - time: 127031.25
+      type: 1
+    - time: 127148.4375
+      type: 2
+    - time: 127265.625
+      type: 0
+    - time: 127382.8125
+      type: 2
+    - time: 129609.375
+      type: 0
+    - time: 129726.5625
+      type: 2
+    - time: 131718.75
+      type: 0
+    - time: 131835.9375
+      type: 1
+    - time: 131953.125
+      type: 1
+    - time: 132070.3125
+      type: 2
+    - time: 132187.5
+      type: 0
+    - time: 132304.6875
+      type: 1
+    - time: 132421.875
+      type: 2
+    - time: 132539.0625
+      type: 0
+    - time: 132656.25
+      type: 1
+    - time: 132773.4375
+      type: 2
+    - time: 132890.625
+      type: 0
+    - time: 133007.8125
+      type: 2
+    - time: 133593.75
+      type: 0
+    - time: 133710.9375
+      type: 1
+    - time: 133828.125
+      type: 1
+    - time: 133945.3125
+      type: 2
+    - time: 134062.5
+      type: 0
+    - time: 134179.6875
+      type: 1
+    - time: 134296.875
+      type: 2
+    - time: 134414.0625
+      type: 0
+    - time: 134531.25
+      type: 1
+    - time: 134648.4375
+      type: 2
+    - time: 139218.75
+      type: 0
+    - time: 139335.9375
+      type: 1
+    - time: 139453.125
+      type: 1
+    - time: 139570.3125
+      type: 2
+    - time: 139687.5
+      type: 0
+    - time: 139804.6875
+      type: 1
+    - time: 139921.875
+      type: 2
+    - time: 140039.0625
+      type: 0
+    - time: 140156.25
+      type: 1
+    - time: 140273.4375
+      type: 2
+    - time: 140390.625
+      type: 0
+    - time: 140507.8125
+      type: 2
+    - time: 141093.75
+      type: 0
+    - time: 141210.9375
+      type: 1
+    - time: 141328.125
+      type: 1
+    - time: 141445.3125
+      type: 2
+    - time: 141562.5
+      type: 0
+    - time: 141679.6875
+      type: 1
+    - time: 141796.875
+      type: 2
+    - time: 141914.0625
+      type: 0
+    - time: 142031.25
+      type: 1
+    - time: 142148.4375
+      type: 2
+    - time: 142265.625
+      type: 0
+    - time: 142382.8125
+      type: 2
+    - time: 144609.375
+      type: 0
+    - time: 144726.5625
+      type: 2
+    - time: 146718.75
+      type: 0
+    - time: 146835.9375
+      type: 1
+    - time: 146953.125
+      type: 1
+    - time: 147070.3125
+      type: 2
+    - time: 147187.5
+      type: 0
+    - time: 147304.6875
+      type: 1
+    - time: 147421.875
+      type: 2
+    - time: 147539.0625
+      type: 0
+    - time: 147656.25
+      type: 1
+    - time: 147773.4375
+      type: 2
+    - time: 147890.625
+      type: 0
+    - time: 148007.8125
+      type: 2
+    - time: 148593.75
+      type: 0
+    - time: 148710.9375
+      type: 1
+    - time: 148828.125
+      type: 1
+    - time: 148945.3125
+      type: 2
+    - time: 149062.5
+      type: 0
+    - time: 149179.6875
+      type: 1
+    - time: 149296.875
+      type: 2
+    - time: 149414.0625
+      type: 0
+    - time: 149531.25
+      type: 1
+    - time: 149648.4375
+      type: 2
+    - time: 149765.625
+      type: 0
+    - time: 149882.8125
+      type: 2
+    - time: 154218.75
+      type: 0
+    - time: 154335.9375
+      type: 1
+    - time: 154453.125
+      type: 1
+    - time: 154570.3125
+      type: 2
+    - time: 154687.5
+      type: 0
+    - time: 154804.6875
+      type: 1
+    - time: 154921.875
+      type: 2
+    - time: 155039.0625
+      type: 0
+    - time: 155156.25
+      type: 1
+    - time: 155273.4375
+      type: 2
+    - time: 155390.625
+      type: 0
+    - time: 155507.8125
+      type: 2
+    - time: 156093.75
+      type: 0
+    - time: 156210.9375
+      type: 1
+    - time: 156328.125
+      type: 1
+    - time: 156445.3125
+      type: 2
+    - time: 156562.5
+      type: 0
+    - time: 156679.6875
+      type: 1
+    - time: 156796.875
+      type: 2
+    - time: 156914.0625
+      type: 0
+    - time: 157031.25
+      type: 1
+    - time: 157148.4375
+      type: 2
+    - time: 157265.625
+      type: 0
+    - time: 157382.8125
+      type: 2
+    - time: 159609.375
+      type: 0
+    - time: 159726.5625
+      type: 2
+    - time: 161718.75
+      type: 0
+    - time: 161835.9375
+      type: 1
+    - time: 161953.125
+      type: 1
+    - time: 162070.3125
+      type: 2
+    - time: 162187.5
+      type: 0
+    - time: 162304.6875
+      type: 1
+    - time: 162421.875
+      type: 2
+    - time: 162539.0625
+      type: 0
+    - time: 162656.25
+      type: 1
+    - time: 162773.4375
+      type: 2
+    - time: 162890.625
+      type: 0
+    - time: 163007.8125
+      type: 2
+    - time: 163593.75
+      type: 0
+    - time: 163710.9375
+      type: 1
+    - time: 163828.125
+      type: 1
+    - time: 163945.3125
+      type: 2
+    - time: 164062.5
+      type: 0
+    - time: 164179.6875
+      type: 1
+    - time: 164296.875
+      type: 2
+    - time: 164414.0625
+      type: 0
+    - time: 164531.25
+      type: 1
+    - time: 164648.4375
+      type: 2
+    - time: 164765.625
+      type: 0
+    - time: 164882.8125
+      type: 2
+  - shit:
+    - time: 45468
+      type: 0
+    - time: 45585.1875
+      type: 1
+    - time: 45702.375
+      type: 1
+    - time: 45819.5625
+      type: 2
+    - time: 45937
+      type: 0
+    - time: 46054.1875
+      type: 1
+    - time: 46171.375
+      type: 2
+    - time: 46289
+      type: 0
+    - time: 46406.1875
+      type: 1
+    - time: 46523.375
+      type: 2
+    - time: 46640
+      type: 0
+    - time: 46757.1875
+      type: 2
+    - time: 47343.75
+      type: 0
+    - time: 47460.9375
+      type: 1
+    - time: 47578.125
+      type: 1
+    - time: 47695.3125
+      type: 2
+    - time: 47812.5
+      type: 0
+    - time: 47929.6875
+      type: 1
+    - time: 48046.875
+      type: 2
+    - time: 48164.0625
+      type: 0
+    - time: 48281.25
+      type: 1
+    - time: 48398.4375
+      type: 2
+    - time: 48515.625
+      type: 0
+    - time: 48632.8125
+      type: 2
+    - time: 54609.375
+      type: 0
+    - time: 54726.5625
+      type: 2
+    - time: 56718
+      type: 0
+    - time: 56835.1875
+      type: 1
+    - time: 56952.375
+      type: 1
+    - time: 57069.5625
+      type: 2
+    - time: 57187
+      type: 0
+    - time: 57304.1875
+      type: 1
+    - time: 57421.375
+      type: 2
+    - time: 57539
+      type: 0
+    - time: 57656.1875
+      type: 1
+    - time: 57773.375
+      type: 2
+    - time: 57890
+      type: 0
+    - time: 58007.1875
+      type: 2
+    - time: 58593.75
+      type: 0
+    - time: 58710.9375
+      type: 1
+    - time: 58828.125
+      type: 1
+    - time: 58945.3125
+      type: 2
+    - time: 59062.5
+      type: 0
+    - time: 59179.6875
+      type: 1
+    - time: 59296.875
+      type: 2
+    - time: 59414.0625
+      type: 0
+    - time: 59531.25
+      type: 1
+    - time: 59648.4375
+      type: 2
+    - time: 60468.75
+      type: 0
+    - time: 60585.9375
+      type: 1
+    - time: 60703.125
+      type: 1
+    - time: 60820.3125
+      type: 2
+    - time: 60937.5
+      type: 0
+    - time: 61054.6875
+      type: 1
+    - time: 61171.875
+      type: 2
+    - time: 61289.0625
+      type: 0
+    - time: 61406.25
+      type: 1
+    - time: 61523.4375
+      type: 2
+    - time: 61640.625
+      type: 0
+    - time: 61757.8125
+      type: 2
+    - time: 62343.75
+      type: 0
+    - time: 62460.9375
+      type: 1
+    - time: 62578.125
+      type: 1
+    - time: 62695.3125
+      type: 2
+    - time: 62812.5
+      type: 0
+    - time: 62929.6875
+      type: 1
+    - time: 63046.875
+      type: 2
+    - time: 63164.0625
+      type: 0
+    - time: 63281.25
+      type: 1
+    - time: 63398.4375
+      type: 2
+    - time: 63515.625
+      type: 0
+    - time: 63632.8125
+      type: 2
+    - time: 69609.375
+      type: 0
+    - time: 69726.5625
+      type: 2
+    - time: 71718.75
+      type: 0
+    - time: 71835.9375
+      type: 1
+    - time: 71953.125
+      type: 1
+    - time: 72070.3125
+      type: 2
+    - time: 72187.5
+      type: 0
+    - time: 72304.6875
+      type: 1
+    - time: 72421.875
+      type: 2
+    - time: 72539.0625
+      type: 0
+    - time: 72656.25
+      type: 1
+    - time: 72773.4375
+      type: 2
+    - time: 72890.625
+      type: 0
+    - time: 73007.8125
+      type: 2
+    - time: 73593.75
+      type: 0
+    - time: 73710.9375
+      type: 1
+    - time: 73828.125
+      type: 1
+    - time: 73945.3125
+      type: 2
+    - time: 74062.5
+      type: 0
+    - time: 74179.6875
+      type: 1
+    - time: 74296.875
+      type: 2
+    - time: 74414.0625
+      type: 0
+    - time: 74531.25
+      type: 1
+    - time: 74648.4375
+      type: 2
+    - time: 74765.625
+      type: 0
+    - time: 74882.8125
+      type: 2
+    - time: 120468.75
+      type: 0
+    - time: 120585.9375
+      type: 1
+    - time: 120703.125
+      type: 1
+    - time: 120820.3125
+      type: 2
+    - time: 120937.5
+      type: 0
+    - time: 121054.6875
+      type: 1
+    - time: 121171.875
+      type: 2
+    - time: 121289.0625
+      type: 0
+    - time: 121406.25
+      type: 1
+    - time: 121523.4375
+      type: 2
+    - time: 121640.625
+      type: 0
+    - time: 121757.8125
+      type: 2
+    - time: 122343.75
+      type: 0
+    - time: 122460.9375
+      type: 1
+    - time: 122578.125
+      type: 1
+    - time: 122695.3125
+      type: 2
+    - time: 122812.5
+      type: 0
+    - time: 122929.6875
+      type: 1
+    - time: 123046.875
+      type: 2
+    - time: 123164.0625
+      type: 0
+    - time: 123281.25
+      type: 1
+    - time: 123398.4375
+      type: 2
+    - time: 123515.625
+      type: 0
+    - time: 123632.8125
+      type: 2
+    - time: 129609.375
+      type: 0
+    - time: 129726.5625
+      type: 2
+    - time: 131718.75
+      type: 0
+    - time: 131835.9375
+      type: 1
+    - time: 131953.125
+      type: 1
+    - time: 132070.3125
+      type: 2
+    - time: 132187.5
+      type: 0
+    - time: 132304.6875
+      type: 1
+    - time: 132421.875
+      type: 2
+    - time: 132539.0625
+      type: 0
+    - time: 132656.25
+      type: 1
+    - time: 132773.4375
+      type: 2
+    - time: 132890.625
+      type: 0
+    - time: 133007.8125
+      type: 2
+    - time: 133593.75
+      type: 0
+    - time: 133710.9375
+      type: 1
+    - time: 133828.125
+      type: 1
+    - time: 133945.3125
+      type: 2
+    - time: 134062.5
+      type: 0
+    - time: 134179.6875
+      type: 1
+    - time: 134296.875
+      type: 2
+    - time: 134414.0625
+      type: 0
+    - time: 134531.25
+      type: 1
+    - time: 134648.4375
+      type: 2
+    - time: 135468.75
+      type: 0
+    - time: 135585.9375
+      type: 1
+    - time: 135703.125
+      type: 1
+    - time: 135820.3125
+      type: 2
+    - time: 135937.5
+      type: 0
+    - time: 136054.6875
+      type: 1
+    - time: 136171.875
+      type: 2
+    - time: 136289.0625
+      type: 0
+    - time: 136406.25
+      type: 1
+    - time: 136523.4375
+      type: 2
+    - time: 136640.625
+      type: 0
+    - time: 136757.8125
+      type: 2
+    - time: 137343.75
+      type: 0
+    - time: 137460.9375
+      type: 1
+    - time: 137578.125
+      type: 1
+    - time: 137695.3125
+      type: 2
+    - time: 137812.5
+      type: 0
+    - time: 137929.6875
+      type: 1
+    - time: 138046.875
+      type: 2
+    - time: 138164.0625
+      type: 0
+    - time: 138281.25
+      type: 1
+    - time: 138398.4375
+      type: 2
+    - time: 138515.625
+      type: 0
+    - time: 138632.8125
+      type: 2
+    - time: 144609.375
+      type: 0
+    - time: 144726.5625
+      type: 2
+    - time: 146718.75
+      type: 0
+    - time: 146835.9375
+      type: 1
+    - time: 146953.125
+      type: 1
+    - time: 147070.3125
+      type: 2
+    - time: 147187.5
+      type: 0
+    - time: 147304.6875
+      type: 1
+    - time: 147421.875
+      type: 2
+    - time: 147539.0625
+      type: 0
+    - time: 147656.25
+      type: 1
+    - time: 147773.4375
+      type: 2
+    - time: 147890.625
+      type: 0
+    - time: 148007.8125
+      type: 2
+    - time: 148593.75
+      type: 0
+    - time: 148710.9375
+      type: 1
+    - time: 148828.125
+      type: 1
+    - time: 148945.3125
+      type: 2
+    - time: 149062.5
+      type: 0
+    - time: 149179.6875
+      type: 1
+    - time: 149296.875
+      type: 2
+    - time: 149414.0625
+      type: 0
+    - time: 149531.25
+      type: 1
+    - time: 149648.4375
+      type: 2
+    - time: 149765.625
+      type: 0
+    - time: 149882.8125
+      type: 2
+    - time: 150468.75
+      type: 0
+    - time: 150585.9375
+      type: 1
+    - time: 150703.125
+      type: 1
+    - time: 150820.3125
+      type: 2
+    - time: 150937.5
+      type: 0
+    - time: 151054.6875
+      type: 1
+    - time: 151171.875
+      type: 2
+    - time: 151289.0625
+      type: 0
+    - time: 151406.25
+      type: 1
+    - time: 151523.4375
+      type: 2
+    - time: 151640.625
+      type: 0
+    - time: 151757.8125
+      type: 2
+    - time: 152343.75
+      type: 0
+    - time: 152460.9375
+      type: 1
+    - time: 152578.125
+      type: 1
+    - time: 152695.3125
+      type: 2
+    - time: 152812.5
+      type: 0
+    - time: 152929.6875
+      type: 1
+    - time: 153046.875
+      type: 2
+    - time: 153164.0625
+      type: 0
+    - time: 153281.25
+      type: 1
+    - time: 153398.4375
+      type: 2
+    - time: 153515.625
+      type: 0
+    - time: 153632.8125
+      type: 2
+    - time: 159609.375
+      type: 0
+    - time: 159726.5625
+      type: 2
+    - time: 161718.75
+      type: 0
+    - time: 161835.9375
+      type: 1
+    - time: 161953.125
+      type: 1
+    - time: 162070.3125
+      type: 2
+    - time: 162187.5
+      type: 0
+    - time: 162304.6875
+      type: 1
+    - time: 162421.875
+      type: 2
+    - time: 162539.0625
+      type: 0
+    - time: 162656.25
+      type: 1
+    - time: 162773.4375
+      type: 2
+    - time: 162890.625
+      type: 0
+    - time: 163007.8125
+      type: 2
+    - time: 163593.75
+      type: 0
+    - time: 163710.9375
+      type: 1
+    - time: 163828.125
+      type: 1
+    - time: 163945.3125
+      type: 2
+    - time: 164062.5
+      type: 0
+    - time: 164179.6875
+      type: 1
+    - time: 164296.875
+      type: 2
+    - time: 164414.0625
+      type: 0
+    - time: 164531.25
+      type: 1
+    - time: 164648.4375
+      type: 2
+    - time: 164765.625
+      type: 0
+    - time: 164882.8125
+      type: 2
+    - time: 180468.75
+      type: 0
+    - time: 180585.9375
+      type: 1
+    - time: 180703.125
+      type: 1
+    - time: 180820.3125
+      type: 2
+    - time: 180937.5
+      type: 0
+    - time: 181054.6875
+      type: 1
+    - time: 181171.875
+      type: 2
+    - time: 181289.0625
+      type: 0
+    - time: 181406.25
+      type: 1
+    - time: 181523.4375
+      type: 2
+    - time: 181640.625
+      type: 0
+    - time: 181757.8125
+      type: 2
+    - time: 182343.75
+      type: 0
+    - time: 182460.9375
+      type: 1
+    - time: 182578.125
+      type: 1
+    - time: 182695.3125
+      type: 2
+    - time: 182812.5
+      type: 0
+    - time: 182929.6875
+      type: 1
+    - time: 183046.875
+      type: 2
+    - time: 183164.0625
+      type: 0
+    - time: 183281.25
+      type: 1
+    - time: 183398.4375
+      type: 2
+    - time: 183515.625
+      type: 0
+    - time: 183632.8125
+      type: 2
+  - shit:
+    - time: 50859.375
+      type: 0
+    - time: 50976.5625
+      type: 2
+    - time: 52968
+      type: 0
+    - time: 53085.1875
+      type: 1
+    - time: 53202.375
+      type: 1
+    - time: 53319.5625
+      type: 2
+    - time: 53437
+      type: 0
+    - time: 53554.1875
+      type: 1
+    - time: 53671.375
+      type: 2
+    - time: 53789
+      type: 0
+    - time: 53906.1875
+      type: 1
+    - time: 54023.375
+      type: 2
+    - time: 54140
+      type: 0
+    - time: 54257.1875
+      type: 2
+    - time: 54843.75
+      type: 0
+    - time: 54960.9375
+      type: 1
+    - time: 55078.125
+      type: 1
+    - time: 55195.3125
+      type: 2
+    - time: 55312.5
+      type: 0
+    - time: 55429.6875
+      type: 1
+    - time: 55546.875
+      type: 2
+    - time: 55664.0625
+      type: 0
+    - time: 55781.25
+      type: 1
+    - time: 55898.4375
+      type: 2
+    - time: 56015.625
+      type: 0
+    - time: 56132.8125
+      type: 2
+    - time: 58359.375
+      type: 0
+    - time: 58476.5625
+      type: 2
+    - time: 65859.375
+      type: 0
+    - time: 65976.5625
+      type: 2
+    - time: 67968.75
+      type: 0
+    - time: 68085.9375
+      type: 1
+    - time: 68203.125
+      type: 1
+    - time: 68320.3125
+      type: 2
+    - time: 68437.5
+      type: 0
+    - time: 68554.6875
+      type: 1
+    - time: 68671.875
+      type: 2
+    - time: 68789.0625
+      type: 0
+    - time: 68906.25
+      type: 1
+    - time: 69023.4375
+      type: 2
+    - time: 69140.625
+      type: 0
+    - time: 69257.8125
+      type: 2
+    - time: 69843.75
+      type: 0
+    - time: 69960.9375
+      type: 1
+    - time: 70078.125
+      type: 1
+    - time: 70195.3125
+      type: 2
+    - time: 70312.5
+      type: 0
+    - time: 70429.6875
+      type: 1
+    - time: 70546.875
+      type: 2
+    - time: 70664.0625
+      type: 0
+    - time: 70781.25
+      type: 1
+    - time: 70898.4375
+      type: 2
+    - time: 71015.625
+      type: 0
+    - time: 71132.8125
+      type: 2
+    - time: 73359.375
+      type: 0
+    - time: 73476.5625
+      type: 2
+    - time: 125859.375
+      type: 0
+    - time: 125976.5625
+      type: 2
+    - time: 127968.75
+      type: 0
+    - time: 128085.9375
+      type: 1
+    - time: 128203.125
+      type: 1
+    - time: 128320.3125
+      type: 2
+    - time: 128437.5
+      type: 0
+    - time: 128554.6875
+      type: 1
+    - time: 128671.875
+      type: 2
+    - time: 128789.0625
+      type: 0
+    - time: 128906.25
+      type: 1
+    - time: 129023.4375
+      type: 2
+    - time: 129140.625
+      type: 0
+    - time: 129257.8125
+      type: 2
+    - time: 129843.75
+      type: 0
+    - time: 129960.9375
+      type: 1
+    - time: 130078.125
+      type: 1
+    - time: 130195.3125
+      type: 2
+    - time: 130312.5
+      type: 0
+    - time: 130429.6875
+      type: 1
+    - time: 130546.875
+      type: 2
+    - time: 130664.0625
+      type: 0
+    - time: 130781.25
+      type: 1
+    - time: 130898.4375
+      type: 2
+    - time: 131015.625
+      type: 0
+    - time: 131132.8125
+      type: 2
+    - time: 133359.375
+      type: 0
+    - time: 133476.5625
+      type: 2
+    - time: 140859.375
+      type: 0
+    - time: 140976.5625
+      type: 2
+    - time: 142968.75
+      type: 0
+    - time: 143085.9375
+      type: 1
+    - time: 143203.125
+      type: 1
+    - time: 143320.3125
+      type: 2
+    - time: 143437.5
+      type: 0
+    - time: 143554.6875
+      type: 1
+    - time: 143671.875
+      type: 2
+    - time: 143789.0625
+      type: 0
+    - time: 143906.25
+      type: 1
+    - time: 144023.4375
+      type: 2
+    - time: 144140.625
+      type: 0
+    - time: 144257.8125
+      type: 2
+    - time: 144843.75
+      type: 0
+    - time: 144960.9375
+      type: 1
+    - time: 145078.125
+      type: 1
+    - time: 145195.3125
+      type: 2
+    - time: 145312.5
+      type: 0
+    - time: 145429.6875
+      type: 1
+    - time: 145546.875
+      type: 2
+    - time: 145664.0625
+      type: 0
+    - time: 145781.25
+      type: 1
+    - time: 145898.4375
+      type: 2
+    - time: 146015.625
+      type: 0
+    - time: 146132.8125
+      type: 2
+    - time: 148359.375
+      type: 0
+    - time: 148476.5625
+      type: 2
+    - time: 155859.375
+      type: 0
+    - time: 155976.5625
+      type: 2
+    - time: 157968.75
+      type: 0
+    - time: 158085.9375
+      type: 1
+    - time: 158203.125
+      type: 1
+    - time: 158320.3125
+      type: 2
+    - time: 158437.5
+      type: 0
+    - time: 158554.6875
+      type: 1
+    - time: 158671.875
+      type: 2
+    - time: 158789.0625
+      type: 0
+    - time: 158906.25
+      type: 1
+    - time: 159023.4375
+      type: 2
+    - time: 159140.625
+      type: 0
+    - time: 159257.8125
+      type: 2
+    - time: 159843.75
+      type: 0
+    - time: 159960.9375
+      type: 1
+    - time: 160078.125
+      type: 1
+    - time: 160195.3125
+      type: 2
+    - time: 160312.5
+      type: 0
+    - time: 160429.6875
+      type: 1
+    - time: 160546.875
+      type: 2
+    - time: 160664.0625
+      type: 0
+    - time: 160781.25
+      type: 1
+    - time: 160898.4375
+      type: 2
+    - time: 161015.625
+      type: 0
+    - time: 161132.8125
+      type: 2
+    - time: 163359.375
+      type: 0
+    - time: 163476.5625
+      type: 2
+  opponentTracks:
+  - shit:
+    - time: 16406.25
+      type: 0
+    - time: 16523.4375
+      type: 1
+    - time: 16640.625
+      type: 2
+    - time: 16757.8125
+      type: 0
+    - time: 16875
+      type: 1
+    - time: 16992.1875
+      type: 1
+    - time: 17109.375
+      type: 2
+    - time: 18515
+      type: 0
+    - time: 19453.125
+      type: 0
+    - time: 19687.5
+      type: 0
+    - time: 19804.6875
+      type: 2
+    - time: 21328
+      type: 0
+    - time: 21445
+      type: 0
+    - time: 21562.1875
+      type: 1
+    - time: 21679.375
+      type: 2
+    - time: 22500
+      type: 0
+    - time: 22617.1875
+      type: 1
+    - time: 22734.375
+      type: 1
+    - time: 22851.5625
+      type: 2
+    - time: 22968.75
+      type: 0
+    - time: 24023.4375
+      type: 0
+    - time: 24843
+      type: 0
+    - time: 24960.1875
+      type: 2
+    - time: 26484.375
+      type: 0
+    - time: 27656.25
+      type: 0
+    - time: 27890.625
+      type: 0
+    - time: 28007.8125
+      type: 1
+    - time: 28125
+      type: 1
+    - time: 28242.1875
+      type: 2
+    - time: 30468.75
+      type: 0
+    - time: 30585.9375
+      type: 2
+    - time: 31171.875
+      type: 0
+    - time: 32695
+      type: 0
+    - time: 32812.1875
+      type: 1
+    - time: 32929.375
+      type: 1
+    - time: 33046.5625
+      type: 1
+    - time: 33163.75
+      type: 2
+    - time: 33750
+      type: 0
+    - time: 33867.1875
+      type: 1
+    - time: 33984.375
+      type: 2
+    - time: 34218.75
+      type: 0
+    - time: 35214.84375
+      type: 0
+    - time: 38027.34375
+      type: 0
+    - time: 38613.28125
+      type: 0
+    - time: 39667
+      type: 0
+    - time: 40781
+      type: 0
+    - time: 41777.34375
+      type: 0
+    - time: 42656.25
+      type: 0
+    - time: 42832.03125
+      type: 0
+    - time: 44531
+      type: 0
+    - time: 44648.1875
+      type: 2
+    - time: 52500
+      type: 0
+    - time: 52617.1875
+      type: 1
+    - time: 52734.375
+      type: 1
+    - time: 52851.5625
+      type: 2
+    - time: 52968
+      type: 0
+    - time: 54023
+      type: 0
+    - time: 54843.75
+      type: 0
+    - time: 54960.9375
+      type: 2
+    - time: 56484
+      type: 0
+    - time: 57656
+      type: 0
+    - time: 57890
+      type: 0
+    - time: 58007.1875
+      type: 1
+    - time: 58124.375
+      type: 1
+    - time: 58241.5625
+      type: 2
+    - time: 59531.25
+      type: 0
+    - time: 59648.4375
+      type: 2
+    - time: 68027.34375
+      type: 0
+    - time: 68613.28125
+      type: 0
+    - time: 69667.96875
+      type: 0
+    - time: 70781.25
+      type: 0
+    - time: 71777.34375
+      type: 0
+    - time: 72656.25
+      type: 0
+    - time: 72832.03125
+      type: 0
+    - time: 74531.25
+      type: 0
+    - time: 74648.4375
+      type: 2
+    - time: 89941
+      type: 0
+    - time: 90058.1875
+      type: 2
+    - time: 91054
+      type: 0
+    - time: 91171.1875
+      type: 2
+    - time: 92695
+      type: 0
+    - time: 93515
+      type: 0
+    - time: 94570
+      type: 0
+    - time: 94687.1875
+      type: 2
+    - time: 94921
+      type: 0
+    - time: 95332
+      type: 0
+    - time: 95449.1875
+      type: 1
+    - time: 95566.375
+      type: 1
+    - time: 95683.5625
+      type: 1
+    - time: 95800.75
+      type: 1
+    - time: 95917.9375
+      type: 2
+    - time: 98378
+      type: 0
+    - time: 98495.1875
+      type: 2
+    - time: 99433
+      type: 0
+    - time: 99609
+      type: 0
+    - time: 99726.1875
+      type: 1
+    - time: 99843.375
+      type: 2
+    - time: 101484
+      type: 0
+    - time: 101660
+      type: 0
+    - time: 105468
+      type: 0
+    - time: 105585.1875
+      type: 2
+    - time: 106171
+      type: 0
+    - time: 107695
+      type: 0
+    - time: 107812.1875
+      type: 1
+    - time: 107929.375
+      type: 1
+    - time: 108046.5625
+      type: 1
+    - time: 108163.75
+      type: 2
+    - time: 108750
+      type: 0
+    - time: 108867.1875
+      type: 1
+    - time: 108984.375
+      type: 2
+    - time: 109218
+      type: 0
+    - time: 110214
+      type: 0
+    - time: 113027
+      type: 0
+    - time: 113613
+      type: 0
+    - time: 114667
+      type: 0
+    - time: 115781
+      type: 0
+    - time: 116777
+      type: 0
+    - time: 117656
+      type: 0
+    - time: 117832
+      type: 0
+    - time: 119531
+      type: 0
+    - time: 119648.1875
+      type: 2
+    - time: 127500
+      type: 0
+    - time: 127617.1875
+      type: 1
+    - time: 127734.375
+      type: 1
+    - time: 127851.5625
+      type: 2
+    - time: 127968.75
+      type: 0
+    - time: 129023.4375
+      type: 0
+    - time: 129843.75
+      type: 0
+    - time: 129960.9375
+      type: 2
+    - time: 131484.375
+      type: 0
+    - time: 132656.25
+      type: 0
+    - time: 132890.625
+      type: 0
+    - time: 133007.8125
+      type: 1
+    - time: 133125
+      type: 1
+    - time: 133242.1875
+      type: 2
+    - time: 134531.25
+      type: 0
+    - time: 134648.4375
+      type: 2
+    - time: 143027.34375
+      type: 0
+    - time: 143613.28125
+      type: 0
+    - time: 144667.96875
+      type: 0
+    - time: 145781.25
+      type: 0
+    - time: 146777.34375
+      type: 0
+    - time: 147656.25
+      type: 0
+    - time: 147832.03125
+      type: 0
+    - time: 149531.25
+      type: 0
+    - time: 149648.4375
+      type: 2
+    - time: 158378.90625
+      type: 0
+    - time: 158496.09375
+      type: 2
+    - time: 159433.59375
+      type: 0
+    - time: 159609.375
+      type: 0
+    - time: 159726.5625
+      type: 1
+    - time: 159843.75
+      type: 2
+    - time: 161484.375
+      type: 0
+    - time: 161660.15625
+      type: 0
+    - time: 164531.25
+      type: 0
+    - time: 164648.4375
+      type: 2
+    - time: 173027
+      type: 0
+    - time: 173730
+      type: 0
+    - time: 174667
+      type: 0
+    - time: 175781
+      type: 0
+    - time: 176777
+      type: 0
+    - time: 177656
+      type: 0
+    - time: 177832
+      type: 0
+    - time: 179531
+      type: 0
+    - time: 179648.1875
+      type: 2
+  - shit:
+    - time: 17343
+      type: 0
+    - time: 18750
+      type: 0
+    - time: 18867.1875
+      type: 1
+    - time: 18984.375
+      type: 2
+    - time: 20039.0625
+      type: 0
+    - time: 20156.25
+      type: 0
+    - time: 20273.4375
+      type: 2
+    - time: 25078
+      type: 0
+    - time: 26132
+      type: 0
+    - time: 26249.1875
+      type: 2
+    - time: 28593
+      type: 0
+    - time: 28710.1875
+      type: 1
+    - time: 28827.375
+      type: 1
+    - time: 28944.5625
+      type: 1
+    - time: 29061.75
+      type: 2
+    - time: 30000
+      type: 0
+    - time: 30117.1875
+      type: 1
+    - time: 30234.375
+      type: 1
+    - time: 30351.5625
+      type: 2
+    - time: 31406.25
+      type: 0
+    - time: 31523.4375
+      type: 1
+    - time: 31640.625
+      type: 2
+    - time: 34453.125
+      type: 0
+    - time: 34570.3125
+      type: 0
+    - time: 34687.5
+      type: 1
+    - time: 34804.6875
+      type: 2
+    - time: 36152
+      type: 0
+    - time: 36269.1875
+      type: 1
+    - time: 36386.375
+      type: 1
+    - time: 36503.5625
+      type: 1
+    - time: 36620.75
+      type: 2
+    - time: 38847.65625
+      type: 0
+    - time: 39140.625
+      type: 0
+    - time: 39257.8125
+      type: 1
+    - time: 39375
+      type: 1
+    - time: 39492.1875
+      type: 2
+    - time: 40546
+      type: 0
+    - time: 41425.78125
+      type: 0
+    - time: 41542.96875
+      type: 2
+    - time: 41894.53125
+      type: 0
+    - time: 43007.8125
+      type: 0
+    - time: 43125
+      type: 1
+    - time: 43242.1875
+      type: 1
+    - time: 43359.375
+      type: 1
+    - time: 43476.5625
+      type: 2
+    - time: 44355
+      type: 0
+    - time: 55078.125
+      type: 0
+    - time: 56132.8125
+      type: 0
+    - time: 56250
+      type: 2
+    - time: 58593.75
+      type: 0
+    - time: 58710.9375
+      type: 1
+    - time: 58828.125
+      type: 1
+    - time: 58945.3125
+      type: 1
+    - time: 59062.5
+      type: 2
+    - time: 59355.46875
+      type: 0
+    - time: 68847.65625
+      type: 0
+    - time: 69140.625
+      type: 0
+    - time: 69257.8125
+      type: 1
+    - time: 69375
+      type: 1
+    - time: 69492.1875
+      type: 2
+    - time: 70546.875
+      type: 0
+    - time: 71425.78125
+      type: 0
+    - time: 71542.96875
+      type: 2
+    - time: 71894.53125
+      type: 0
+    - time: 73007.8125
+      type: 0
+    - time: 73125
+      type: 1
+    - time: 73242.1875
+      type: 1
+    - time: 73359.375
+      type: 1
+    - time: 73476.5625
+      type: 2
+    - time: 74355.46875
+      type: 0
+    - time: 90351
+      type: 0
+    - time: 90468.1875
+      type: 2
+    - time: 91347
+      type: 0
+    - time: 92050
+      type: 0
+    - time: 92167.1875
+      type: 2
+    - time: 92285
+      type: 0
+    - time: 93222
+      type: 0
+    - time: 94101
+      type: 0
+    - time: 94394
+      type: 0
+    - time: 99199
+      type: 0
+    - time: 100546
+      type: 0
+    - time: 101953
+      type: 0
+    - time: 102832
+      type: 0
+    - time: 102949.1875
+      type: 1
+    - time: 103066.375
+      type: 1
+    - time: 103183.5625
+      type: 1
+    - time: 103300.75
+      type: 1
+    - time: 103417.9375
+      type: 2
+    - time: 105000
+      type: 0
+    - time: 105117.1875
+      type: 1
+    - time: 105234.375
+      type: 1
+    - time: 105351.5625
+      type: 2
+    - time: 106406
+      type: 0
+    - time: 106523.1875
+      type: 1
+    - time: 106640.375
+      type: 2
+    - time: 109453
+      type: 0
+    - time: 109570
+      type: 0
+    - time: 109687.1875
+      type: 1
+    - time: 109804.375
+      type: 2
+    - time: 111152
+      type: 0
+    - time: 111269.1875
+      type: 1
+    - time: 111386.375
+      type: 1
+    - time: 111503.5625
+      type: 1
+    - time: 111620.75
+      type: 2
+    - time: 113847
+      type: 0
+    - time: 114140
+      type: 0
+    - time: 114257.1875
+      type: 1
+    - time: 114374.375
+      type: 1
+    - time: 114491.5625
+      type: 2
+    - time: 115546
+      type: 0
+    - time: 116425
+      type: 0
+    - time: 116542.1875
+      type: 2
+    - time: 116894
+      type: 0
+    - time: 118007
+      type: 0
+    - time: 118124.1875
+      type: 1
+    - time: 118241.375
+      type: 1
+    - time: 118358.5625
+      type: 1
+    - time: 118475.75
+      type: 2
+    - time: 119355
+      type: 0
+    - time: 130078.125
+      type: 0
+    - time: 131132.8125
+      type: 0
+    - time: 131250
+      type: 2
+    - time: 133593.75
+      type: 0
+    - time: 133710.9375
+      type: 1
+    - time: 133828.125
+      type: 1
+    - time: 133945.3125
+      type: 1
+    - time: 134062.5
+      type: 2
+    - time: 134355.46875
+      type: 0
+    - time: 143847.65625
+      type: 0
+    - time: 144140.625
+      type: 0
+    - time: 144257.8125
+      type: 1
+    - time: 144375
+      type: 1
+    - time: 144492.1875
+      type: 2
+    - time: 145546.875
+      type: 0
+    - time: 146425.78125
+      type: 0
+    - time: 146542.96875
+      type: 2
+    - time: 146894.53125
+      type: 0
+    - time: 148007.8125
+      type: 0
+    - time: 148125
+      type: 1
+    - time: 148242.1875
+      type: 1
+    - time: 148359.375
+      type: 1
+    - time: 148476.5625
+      type: 2
+    - time: 149355.46875
+      type: 0
+    - time: 159199.21875
+      type: 0
+    - time: 160546.875
+      type: 0
+    - time: 161953.125
+      type: 0
+    - time: 162832.03125
+      type: 0
+    - time: 162949.21875
+      type: 1
+    - time: 163066.40625
+      type: 1
+    - time: 163183.59375
+      type: 1
+    - time: 163300.78125
+      type: 1
+    - time: 163417.96875
+      type: 2
+    - time: 164355.46875
+      type: 0
+    - time: 173847
+      type: 0
+    - time: 174140
+      type: 0
+    - time: 174257.1875
+      type: 1
+    - time: 174374.375
+      type: 1
+    - time: 174491.5625
+      type: 2
+    - time: 175546
+      type: 0
+    - time: 176425
+      type: 0
+    - time: 176894
+      type: 0
+    - time: 178007
+      type: 0
+    - time: 178124.1875
+      type: 1
+    - time: 178241.375
+      type: 1
+    - time: 178358.5625
+      type: 1
+    - time: 178475.75
+      type: 2
+    - time: 179355
+      type: 0
+  - shit:
+    - time: 15937.5
+      type: 0
+    - time: 16054.6875
+      type: 1
+    - time: 16171.875
+      type: 1
+    - time: 16289.0625
+      type: 2
+    - time: 17695
+      type: 0
+    - time: 17812.1875
+      type: 1
+    - time: 17929.375
+      type: 1
+    - time: 18046.5625
+      type: 2
+    - time: 20507.8125
+      type: 0
+    - time: 21093
+      type: 0
+    - time: 23203.125
+      type: 0
+    - time: 23906.25
+      type: 0
+    - time: 24375
+      type: 0
+    - time: 24492.1875
+      type: 1
+    - time: 24609.375
+      type: 2
+    - time: 25546
+      type: 0
+    - time: 25663.1875
+      type: 2
+    - time: 27421.875
+      type: 0
+    - time: 31992
+      type: 0
+    - time: 38203.125
+      type: 0
+    - time: 39902
+      type: 0
+    - time: 40253
+      type: 0
+    - time: 40370.1875
+      type: 2
+    - time: 42421.875
+      type: 0
+    - time: 44765
+      type: 0
+    - time: 53203
+      type: 0
+    - time: 53906
+      type: 0
+    - time: 54375
+      type: 0
+    - time: 54492.1875
+      type: 1
+    - time: 54609.375
+      type: 2
+    - time: 55546.875
+      type: 0
+    - time: 55664.0625
+      type: 2
+    - time: 57421
+      type: 0
+    - time: 59765.625
+      type: 0
+    - time: 68203.125
+      type: 0
+    - time: 69902.34375
+      type: 0
+    - time: 70253.90625
+      type: 0
+    - time: 70371.09375
+      type: 2
+    - time: 72421.875
+      type: 0
+    - time: 74765.625
+      type: 0
+    - time: 91582
+      type: 0
+    - time: 92812
+      type: 0
+    - time: 92929.1875
+      type: 1
+    - time: 93046.375
+      type: 2
+    - time: 97792
+      type: 0
+    - time: 98671
+      type: 0
+    - time: 99960
+      type: 0
+    - time: 100781
+      type: 0
+    - time: 102187
+      type: 0
+    - time: 106992
+      type: 0
+    - time: 113203
+      type: 0
+    - time: 114902
+      type: 0
+    - time: 115253
+      type: 0
+    - time: 115370.1875
+      type: 2
+    - time: 117421
+      type: 0
+    - time: 119765
+      type: 0
+    - time: 128203.125
+      type: 0
+    - time: 128906.25
+      type: 0
+    - time: 129375
+      type: 0
+    - time: 129492.1875
+      type: 1
+    - time: 129609.375
+      type: 2
+    - time: 130546.875
+      type: 0
+    - time: 130664.0625
+      type: 2
+    - time: 132421.875
+      type: 0
+    - time: 134765.625
+      type: 0
+    - time: 143203.125
+      type: 0
+    - time: 144902.34375
+      type: 0
+    - time: 145253.90625
+      type: 0
+    - time: 145371.09375
+      type: 2
+    - time: 147421.875
+      type: 0
+    - time: 149765.625
+      type: 0
+    - time: 157792.96875
+      type: 0
+    - time: 158671.875
+      type: 0
+    - time: 159960.9375
+      type: 0
+    - time: 160781.25
+      type: 0
+    - time: 162187.5
+      type: 0
+    - time: 164765.625
+      type: 0
+    - time: 173203
+      type: 0
+    - time: 174902
+      type: 0
+    - time: 175253
+      type: 0
+    - time: 175370.1875
+      type: 2
+    - time: 177421
+      type: 0
+    - time: 179765
+      type: 0
+  - shit:
+    - time: 15000
+      type: 0
+    - time: 15117.1875
+      type: 1
+    - time: 15234.375
+      type: 1
+    - time: 15351.5625
+      type: 2
+    - time: 15468.75
+      type: 0
+    - time: 15585.9375
+      type: 2
+    - time: 15703.125
+      type: 0
+    - time: 15820.3125
+      type: 2
+    - time: 17460
+      type: 0
+    - time: 19218.75
+      type: 0
+    - time: 20625
+      type: 0
+    - time: 20859
+      type: 0
+    - time: 23320.3125
+      type: 0
+    - time: 23437.5
+      type: 1
+    - time: 23554.6875
+      type: 2
+    - time: 23730.46875
+      type: 0
+    - time: 25195
+      type: 0
+    - time: 25312.1875
+      type: 2
+    - time: 25781
+      type: 0
+    - time: 25957
+      type: 0
+    - time: 26777.34375
+      type: 0
+    - time: 26894.53125
+      type: 2
+    - time: 27070.3125
+      type: 0
+    - time: 27187.5
+      type: 2
+    - time: 30703.125
+      type: 0
+    - time: 30937.5
+      type: 0
+    - time: 32109
+      type: 0
+    - time: 32343
+      type: 0
+    - time: 32460.1875
+      type: 2
+    - time: 33574
+      type: 0
+    - time: 34921.875
+      type: 0
+    - time: 35390.625
+      type: 0
+    - time: 35507.8125
+      type: 1
+    - time: 35625
+      type: 1
+    - time: 35742.1875
+      type: 2
+    - time: 37500
+      type: 0
+    - time: 37617.1875
+      type: 1
+    - time: 37734.375
+      type: 1
+    - time: 37851.5625
+      type: 2
+    - time: 38378.90625
+      type: 0
+    - time: 40078
+      type: 0
+    - time: 40957
+      type: 0
+    - time: 41074
+      type: 0
+    - time: 42070.3125
+      type: 0
+    - time: 42187.5
+      type: 2
+    - time: 45000
+      type: 0
+    - time: 45117.1875
+      type: 1
+    - time: 45234.375
+      type: 2
+    - time: 53320
+      type: 0
+    - time: 53437.1875
+      type: 1
+    - time: 53554.375
+      type: 2
+    - time: 53730
+      type: 0
+    - time: 55195.3125
+      type: 0
+    - time: 55312.5
+      type: 2
+    - time: 55781.25
+      type: 0
+    - time: 56015.625
+      type: 0
+    - time: 56777
+      type: 0
+    - time: 56894.1875
+      type: 2
+    - time: 57070
+      type: 0
+    - time: 57187.1875
+      type: 2
+    - time: 60000
+      type: 0
+    - time: 60117.1875
+      type: 1
+    - time: 60234.375
+      type: 2
+    - time: 67500
+      type: 0
+    - time: 67617.1875
+      type: 1
+    - time: 67734.375
+      type: 1
+    - time: 67851.5625
+      type: 2
+    - time: 68378.90625
+      type: 0
+    - time: 70078.125
+      type: 0
+    - time: 70957.03125
+      type: 0
+    - time: 71074.21875
+      type: 0
+    - time: 72070.3125
+      type: 0
+    - time: 72187.5
+      type: 2
+    - time: 75000
+      type: 0
+    - time: 75117.1875
+      type: 1
+    - time: 75234.375
+      type: 2
+    - time: 90644
+      type: 0
+    - time: 90820
+      type: 0
+    - time: 91757
+      type: 0
+    - time: 92519
+      type: 0
+    - time: 93691
+      type: 0
+    - time: 93808.1875
+      type: 1
+    - time: 93925.375
+      type: 2
+    - time: 94277
+      type: 0
+    - time: 96210
+      type: 0
+    - time: 96327.1875
+      type: 1
+    - time: 96444.375
+      type: 1
+    - time: 96561.5625
+      type: 1
+    - time: 96678.75
+      type: 2
+    - time: 97968
+      type: 0
+    - time: 98144
+      type: 0
+    - time: 98964
+      type: 0
+    - time: 99081.1875
+      type: 2
+    - time: 100253
+      type: 0
+    - time: 101015
+      type: 0
+    - time: 101191
+      type: 0
+    - time: 101308.1875
+      type: 2
+    - time: 102480
+      type: 0
+    - time: 102597.1875
+      type: 2
+    - time: 105703
+      type: 0
+    - time: 105937
+      type: 0
+    - time: 107109
+      type: 0
+    - time: 107343
+      type: 0
+    - time: 107460.1875
+      type: 2
+    - time: 108574
+      type: 0
+    - time: 109921
+      type: 0
+    - time: 110390
+      type: 0
+    - time: 110507.1875
+      type: 1
+    - time: 110624.375
+      type: 1
+    - time: 110741.5625
+      type: 2
+    - time: 112500
+      type: 0
+    - time: 112617.1875
+      type: 1
+    - time: 112734.375
+      type: 1
+    - time: 112851.5625
+      type: 2
+    - time: 113378
+      type: 0
+    - time: 115078
+      type: 0
+    - time: 115957
+      type: 0
+    - time: 116074
+      type: 0
+    - time: 117070
+      type: 0
+    - time: 117187.1875
+      type: 2
+    - time: 120000
+      type: 0
+    - time: 120117.1875
+      type: 1
+    - time: 120234.375
+      type: 2
+    - time: 128320.3125
+      type: 0
+    - time: 128437.5
+      type: 1
+    - time: 128554.6875
+      type: 2
+    - time: 128730.46875
+      type: 0
+    - time: 130195.3125
+      type: 0
+    - time: 130312.5
+      type: 2
+    - time: 130781.25
+      type: 0
+    - time: 130957.03125
+      type: 0
+    - time: 131777.34375
+      type: 0
+    - time: 131894.53125
+      type: 2
+    - time: 132070.3125
+      type: 0
+    - time: 132187.5
+      type: 2
+    - time: 135000
+      type: 0
+    - time: 135117.1875
+      type: 1
+    - time: 135234.375
+      type: 2
+    - time: 142500
+      type: 0
+    - time: 142617.1875
+      type: 1
+    - time: 142734.375
+      type: 1
+    - time: 142851.5625
+      type: 2
+    - time: 143378.90625
+      type: 0
+    - time: 145078.125
+      type: 0
+    - time: 145957.03125
+      type: 0
+    - time: 146074.21875
+      type: 0
+    - time: 147070.3125
+      type: 0
+    - time: 147187.5
+      type: 2
+    - time: 150000
+      type: 0
+    - time: 150117.1875
+      type: 1
+    - time: 150234.375
+      type: 2
+    - time: 157968.75
+      type: 0
+    - time: 158144.53125
+      type: 0
+    - time: 158964.84375
+      type: 0
+    - time: 159082.03125
+      type: 2
+    - time: 160253.90625
+      type: 0
+    - time: 161015.625
+      type: 0
+    - time: 161191.40625
+      type: 0
+    - time: 161308.59375
+      type: 2
+    - time: 162480.46875
+      type: 0
+    - time: 162597.65625
+      type: 2
+    - time: 165000
+      type: 0
+    - time: 165117.1875
+      type: 1
+    - time: 165234.375
+      type: 2
+    - time: 172500
+      type: 0
+    - time: 172617.1875
+      type: 1
+    - time: 172734.375
+      type: 1
+    - time: 172851.5625
+      type: 2
+    - time: 173378
+      type: 0
+    - time: 175078
+      type: 0
+    - time: 175957
+      type: 0
+    - time: 176074
+      type: 0
+    - time: 177070
+      type: 0
+    - time: 177187.1875
+      type: 2
+    - time: 180000
+      type: 0
+    - time: 180117.1875
+      type: 1
+    - time: 180234.375
+      type: 2
