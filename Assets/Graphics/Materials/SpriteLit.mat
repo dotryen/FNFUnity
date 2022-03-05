@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpriteLit
-  m_Shader: {fileID: -6465566751694194690, guid: f187c4a500e201e44b53af8c87f4eecf,
+  m_Shader: {fileID: -6465566751694194690, guid: 85be0be7574e4fa4aab2de43c8a630d1,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

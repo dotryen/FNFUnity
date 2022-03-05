@@ -15,4 +15,7 @@ public class TransformBehaviour : PlayableBehaviour {
     [Space]
     public bool changeScale;
     public Vector3 scale;
+    [Space]
+    public bool forceFps;
+    public int fps;
 }

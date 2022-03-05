@@ -800,6 +800,7 @@ RectTransform:
   - {fileID: 1322097420}
   - {fileID: 223147425}
   - {fileID: 1393422736}
+  - {fileID: 1821726242}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1291,7 +1292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1322097420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1567,6 +1568,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411059681}
   m_CullTransparentMesh: 0
+--- !u!1 &1821726241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1821726242}
+  - component: {fileID: 1821726244}
+  - component: {fileID: 1821726243}
+  m_Layer: 5
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1821726242
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821726241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 666807619}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1821726243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821726241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ab389ab11333346b402e3abe7fd815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1821726244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821726241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 29c7c250b807e44489415d2d82640dd8,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 32442fee-9a7f-4166-beaf-7edc982351e0
+    m_ActionName: Gameplay/SingLeft[/Keyboard/leftArrow,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 85ad2c91-9896-48ef-a565-eb74eedd7711
+    m_ActionName: Gameplay/SingDown[/Keyboard/downArrow,/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6a93d8b3-527d-4333-b3be-3f433fffade2
+    m_ActionName: Gameplay/SingUp[/Keyboard/upArrow,/Keyboard/j]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aac9d955-d2ef-4098-859f-33033094e8e2
+    m_ActionName: Gameplay/SingRight[/Keyboard/rightArrow,/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d9a6e3c9-92f0-464c-a025-e5f498df93e7
+    m_ActionName: Gameplay/Pause[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1ca19101-06cf-4eb4-a654-6ebdbbb75d56
+    m_ActionName: Gameplay/BackOut[/Keyboard/backspace,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07fcd8f6-4388-4fa3-9313-1def1368db5a
+    m_ActionName: Menus/Up[/Keyboard/upArrow,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 60841d22-2cbd-4b81-a694-63b230be4911
+    m_ActionName: Menus/Down[/Keyboard/downArrow,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 29bdbaf3-4501-4dbd-8a86-5e388bb20fa7
+    m_ActionName: Menus/Left[/Keyboard/leftArrow,/Keyboard/a,/Keyboard/backspace]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9b6171d6-77fd-4b0f-a974-0724ae64edeb
+    m_ActionName: Menus/Right[/Keyboard/rightArrow,/Keyboard/d,/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 900e83a3-64f8-4c28-ba4b-a0fe29138828
+    m_ActionName: Menus/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d62c50fa-22aa-4dd2-8445-d5e7389b3722
+    m_ActionName: Platformer/MoveVector[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Menus
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1824752876
 GameObject:
   m_ObjectHideFlags: 0

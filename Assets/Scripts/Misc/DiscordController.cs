@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Discord;
+using FNF.Core;
 
 // Tokens are git ignored, make your own token dumbass.
 
@@ -10,24 +11,26 @@ public class DiscordController : MonoBehaviour {
     private Discord.Discord discord;
 
     private void Awake() {
+        if (Instance != null) {
+            Destroy(this);
+            return;
+        } else {
+            Instance = this;
+        }
+
 #if UNITY_EDITOR
         return; // do not do shit in editor
 #endif
 
-        if (Instance != null) {
-            Destroy(this);
-            return;
-        }
-
         try {
+            // Token excluded on git
             discord = new Discord.Discord(Tokens.DISCORD_TOKEN, (ulong)CreateFlags.NoRequireDiscord);
-            Instance = this;
         } catch (System.Exception e) {
             Debug.LogError(e);
             discord = null;
         }
 
-        Activity();
+        IdleActivity();
     }
 
     private void Update() {
@@ -35,16 +38,31 @@ public class DiscordController : MonoBehaviour {
         discord.RunCallbacks();
     }
 
-    public void Activity() {
+    public void IdleActivity() {
         if (discord == null) return;
         var manager = discord.GetActivityManager();
+
         var activity = new Activity() {
-            State = "WIP",
+            State = "Idle",
             Assets = new ActivityAssets() {
-                LargeImage = "jackie",
-                SmallImage = "kadelogo",
-                LargeText = "a picture of the opponent",
-                SmallText = "the kade engine logo i stole lol"
+                LargeImage = "kadelogo",
+            }
+        };
+
+        manager.UpdateActivity(activity, DiscordCallback);
+    }
+
+    public void PlayingActivity() {
+        if (discord == null) return;
+        var manager = discord.GetActivityManager();
+
+        var activity = new Activity() {
+            Details = $"Playing: {GameController.Instance.SongAssets.Metadata.songName}",
+            State = $"Score: {GameplayVars.Score} | {Ratings.GetCurrentRatingString()}",
+            Assets = new ActivityAssets() {
+                LargeImage = "mad",
+                LargeText = "Leave he is going to kill yoy!!!!",
+                SmallImage = "kadelogo"
             }
         };
 

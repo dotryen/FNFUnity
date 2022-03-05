@@ -13,15 +13,15 @@ public class ApplyCameraSettings : MonoBehaviour {
         data.antialiasing = GetAntialiasing(Settings.Visuals.Antialiasing);
         // volume.gameObject.SetActive(Settings.Visuals.PostProcessing);
         
-        // if (!Settings.Visuals.PostProcessing) {
-        //     var profile = volume.profile;
-        //     foreach (var setting in profile.settings) {
-        //         // you cant use the not keyword in this case (stupid fucking unity mono)
-        //         if (!(setting is DigitalGlitch) && !(setting is AnalogGlitch) && !(setting is LensDistortion)) {
-        //             setting.active = false;
-        //         }
-        //     }
-        // }
+        if (!Settings.Visuals.PostProcessing) {
+            var profile = volume.profile;
+            foreach (var setting in profile.components) {
+                // you cant use the not keyword in this case (stupid fucking unity mono)
+                if (!(setting is DigitalGlitch) && !(setting is AnalogGlitch) && !(setting is LensDistortion)) {
+                    setting.active = false;
+                }
+            }
+        }
     }
 
     private AntialiasingMode GetAntialiasing(Antialiasing antialiasing) {

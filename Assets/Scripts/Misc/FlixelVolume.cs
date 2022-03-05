@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 using TMPro;
+using FNF.UI;
+using FNF.Core;
 
 /// <summary>
 /// Recreates HaxeFlixel's volume controls.
@@ -21,10 +24,15 @@ public class FlixelVolume : UIBehaviour {
     public float showSpeed = 5f;
 
     private float time;
+    private Dictionary<string, InputAction> input;
 
     protected override void Awake() {
         base.Awake();
         Instance = this;
+    }
+
+    private void Start() {
+        input = InputManager.GetMapActions("Volume");
     }
 
     private void Update() {
@@ -33,9 +41,9 @@ public class FlixelVolume : UIBehaviour {
         {
             int volMod = 0;
             // plus happens when holding shift, they share a key soooo
-            if (Input.GetKeyDown(KeyCode.Equals)) volMod++;
-            if (Input.GetKeyDown(KeyCode.Minus)) volMod--;
-            if (Input.GetKeyDown(KeyCode.Alpha0)) volMod = -Mathf.RoundToInt(Settings.Audio.Volume * 10f);
+            if (input["VolumeUp"].WasPressedThisFrame()) volMod++;
+            if (input["VolumeDown"].WasPressedThisFrame()) volMod--;
+            if (input["Mute"].WasPressedThisFrame()) volMod = -Mathf.RoundToInt(Settings.Audio.Volume * 10f);
 
             if (volMod != 0) {
                 time = showTime;

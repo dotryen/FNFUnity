@@ -2,30 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteAnimation))]
-public class SpriteSinger : BaseSinger {
-    [Header("Sprite fields")]
-    public new SpriteAnimation animation;
+namespace FNF.Characters {
+    using Sprites;
 
-    private void Awake() {
-        animation = GetComponent<SpriteAnimation>();
-    }
+    [RequireComponent(typeof(SpriteAnimation))]
+    public class SpriteSinger : BaseSinger {
+        [Header("Sprite fields")]
+        public new SpriteAnimation animation;
 
-    public override void GetAnimLength(string name, out int frameCount, out float fps) {
-        var has = animation.sprite.data.TryGetAnimation(name, out var anim);
-
-        if (has) {
-            frameCount = anim.FrameCount;
-            fps = animation.frameRate;
-        } else {
-            frameCount = 0;
-            fps = 0;
+        private void Awake() {
+            animation = GetComponent<SpriteAnimation>();
         }
-    }
 
-    public override void SetAnimation(string name, int frame, float speed, bool loop = false) {
-        animation.speed = speed;
-        animation.SetAnimation(name, loop, frame);
-        animation.update = true;
+        public override void GetAnimLength(string name, out int frameCount, out float fps) {
+            var has = animation.sprite.data.TryGetAnimation(name, out var anim);
+
+            if (has) {
+                frameCount = anim.FrameCount;
+                fps = animation.frameRate;
+            } else {
+                frameCount = 0;
+                fps = 0;
+            }
+        }
+
+        public override void SetAnimation(string name, int frame, float speed, bool loop = false) {
+            animation.speed = speed;
+            animation.SetAnimation(name, loop, frame);
+            animation.update = true;
+        }
     }
 }

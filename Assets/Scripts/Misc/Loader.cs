@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEngine.InputSystem;
 using TMPro;
+using FNF.Core;
 
 public class Loader : MonoBehaviour {
     public TextMeshProUGUI text;
@@ -25,13 +27,13 @@ public class Loader : MonoBehaviour {
         var normalizedSin = (1 + Mathf.Sin(time + 1)) / 2;
         thing.color = new Color(1, 1, 1, normalizedSin);
 
-        if (ready && Input.GetKeyDown(KeyCode.Return)) {
+        if (ready && InputManager.GetAction("Menus", "Submit").IsPressed()) {
             SceneManager.LoadSceneAsync("TitleScreen");
             // ScreenFader.FadeAndLoad("MainMenu", 0);
             Destroy(gameObject);
         }
 
-        if (Input.GetKeyDown(KeyCode.Backspace) && !played) {
+        if (InputManager.GetAction("Menus", "Left").IsPressed() && !played) {
             StartCoroutine(PlayVideo());
         }
     }

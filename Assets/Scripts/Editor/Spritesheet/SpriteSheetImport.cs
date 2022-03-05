@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
+using FNF.Sprites;
 
 public class SpriteSheetImport : EditorWindow {
     private string atlasFile;
@@ -96,7 +97,7 @@ public class SpriteSheetImport : EditorWindow {
             var split = offset.Split(' ');
             offsets.Add(new Offset() {
                 name = split[0],
-                value = new Vector2((-int.Parse(split[1])) * Globals.PIXEL_SIZE, (-int.Parse(split[2])) * Globals.PIXEL_SIZE)
+                value = new Vector2((-int.Parse(split[1])) * SpriteGlobals.PIXEL_SIZE, (-int.Parse(split[2])) * SpriteGlobals.PIXEL_SIZE)
             });
         }
 
@@ -136,7 +137,7 @@ public class SpriteSheetImport : EditorWindow {
             if (data.frameX.HasValue) sizeRect = new Rect(data.frameX.Value, data.frameY.Value, data.frameWidth.Value, data.frameHeight.Value);
             else sizeRect = new Rect(0, 0, data.width, data.height);
 
-            Rect scaled = new Rect(sizeRect.x * Globals.PIXEL_SIZE, (-sizeRect.y) * Globals.PIXEL_SIZE, sizeRect.width * Globals.PIXEL_SIZE, sizeRect.height * Globals.PIXEL_SIZE);
+            Rect scaled = new Rect(sizeRect.x * SpriteGlobals.PIXEL_SIZE, (-sizeRect.y) * SpriteGlobals.PIXEL_SIZE, sizeRect.width * SpriteGlobals.PIXEL_SIZE, sizeRect.height * SpriteGlobals.PIXEL_SIZE);
 
             mesh.bl = new Vector3(scaled.xMin, scaled.yMin);
             mesh.br = new Vector3(scaled.xMax, scaled.yMin);

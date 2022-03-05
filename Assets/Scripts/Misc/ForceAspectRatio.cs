@@ -12,7 +12,6 @@ public class ForceAspectRatio : MonoBehaviour {
     }
 
     private void Update() {
-        GL.Clear(true, true, Color.black); // Since the camera's aspect is forced, it may not clear the entire screen
         // if (cam.aspect == cachedAspect) return;
 
         // set the desired aspect ratio (the values in this example are
@@ -51,5 +50,9 @@ public class ForceAspectRatio : MonoBehaviour {
         }
 
         // cachedAspect = cam.aspect;
+    }
+
+    private void OnPreRender() {
+        GL.Clear(true, true, Color.black); // Since the camera's aspect is forced, it may not clear the entire screen
     }
 }

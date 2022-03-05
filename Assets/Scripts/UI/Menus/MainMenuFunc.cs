@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Scripting;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using FNF.Core;
+using FNF.UI;
 
 public class MainMenuFunc : MenuFunctions {
     public RectTransform loadingText;
@@ -21,16 +23,17 @@ public class MainMenuFunc : MenuFunctions {
     private void Update() {
         if (!controlling) return;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) SettingsController.Left();
-        if (Input.GetKeyDown(KeyCode.RightArrow)) SettingsController.Right();
-
-        InvokingOption.description = InvokingOption.defaultText + ": " + SettingsController.CurrentValue;
-
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        if (InputManager.GetAction("Menus", "Submit").WasPressedThisFrame()) {
             controlling = false;
             InvokingOption.description = descriptionCache;
             InvokingMenu.ActivateNextFrame();
+            return;
         }
+
+        if (InputManager.GetAction("Menus", "Left").WasPressedThisFrame()) SettingsController.Left();
+        if (InputManager.GetAction("Menus", "Right").WasPressedThisFrame()) SettingsController.Right();
+
+        InvokingOption.description = InvokingOption.defaultText + ": " + SettingsController.CurrentValue;
     }
 
     [Preserve]

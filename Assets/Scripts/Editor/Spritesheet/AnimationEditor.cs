@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using FNF.Sprites;
 
 [CustomEditor(typeof(SpriteAnimation), true), CanEditMultipleObjects]
 public class AnimationEditor : Editor {

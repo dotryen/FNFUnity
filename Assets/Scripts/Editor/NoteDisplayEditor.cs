@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using FNF.Core;
 
 [CustomEditor(typeof(NoteDisplay))]
 public class NoteDisplayEditor : Editor {

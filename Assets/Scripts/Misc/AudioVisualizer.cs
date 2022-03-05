@@ -16,8 +16,10 @@ public class AudioVisualizer : MonoBehaviour {
     public float[] bandHeight;
 
     private float[] samples = new float[MAX_BANDS];
-    private ComputeShader compute;
-    private ComputeBuffer buffer;
+
+    // I was gonna try to compute this on GPU for procedural but im not experienced enough
+    // private ComputeShader compute;
+    // private ComputeBuffer buffer;
 
     private void Update() {
         input.GetSpectrumData(samples, 0, FFTWindow.Blackman);
