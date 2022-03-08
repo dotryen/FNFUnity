@@ -7,7 +7,7 @@ public static class WindowUtility {
     public static void LocationField(ref string field, string label, string windowTitle, string directory, string extension) {
         EditorGUILayout.BeginHorizontal();
         field = EditorGUILayout.TextField(label, field);
-        if (GUILayout.Button("Browse")) {
+        if (GUILayout.Button("Browse", EditorStyles.miniButtonRight)) {
             field = EditorUtility.OpenFilePanel(windowTitle, directory, extension);
         }
         EditorGUILayout.EndHorizontal();
@@ -16,7 +16,7 @@ public static class WindowUtility {
     public static void SaveField(ref string field, string label, string windowTitle, string defaultName, string extension) {
         EditorGUILayout.BeginHorizontal();
         field = EditorGUILayout.TextField(label, field);
-        if (GUILayout.Button("Browse")) {
+        if (GUILayout.Button("Browse", EditorStyles.miniButtonRight)) {
             field = EditorUtility.SaveFilePanelInProject(windowTitle, defaultName, extension, "");
         }
         EditorGUILayout.EndHorizontal();

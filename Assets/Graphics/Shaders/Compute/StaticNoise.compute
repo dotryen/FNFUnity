@@ -25,7 +25,7 @@ float nrand(float2 co) {
 // }
 
 [numthreads(SIZE, SIZE, 1)]
-void DoShit (uint3 id : SV_DispatchThreadID) {
+void DoShit(uint3 id : SV_DispatchThreadID) {
     uint2 dimensions = 0;
     uint2 workAmount = 0;
 

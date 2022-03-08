@@ -165,16 +165,6 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "com.yetman.render-pipelines.universal.postprocess": {
-      "version": "https://github.com/yahiaetman/URPCustomPostProcessingStack.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.render-pipelines.universal": "10.2.2",
-        "com.unity.render-pipelines.core": "10.2.2"
-      },
-      "hash": "07085d2853294c0ed831a9fd8030e94e05532bf8"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

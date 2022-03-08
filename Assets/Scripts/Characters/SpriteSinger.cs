@@ -5,14 +5,9 @@ using UnityEngine;
 namespace FNF.Characters {
     using Sprites;
 
-    [RequireComponent(typeof(SpriteAnimation))]
     public class SpriteSinger : BaseSinger {
         [Header("Sprite fields")]
         public new SpriteAnimation animation;
-
-        private void Awake() {
-            animation = GetComponent<SpriteAnimation>();
-        }
 
         public override void GetAnimLength(string name, out int frameCount, out float fps) {
             var has = animation.sprite.data.TryGetAnimation(name, out var anim);

@@ -9,7 +9,11 @@ namespace FNF.Characters {
 
     public abstract class BaseSinger : BeatBehaviour {
         [Header("Options")]
+        [Tooltip("Whether the singer can dance, perfect for in game events.")]
+        public bool allowDancing = true;
+        [Tooltip("I don't really know what this is for, Ninjamuffin sets this as a different value for Dad only.")]
         public float multiplier = 4f;
+        [Tooltip("Dance every X beats.")]
         public int beatMod = 2;
 
         [Header("Events")]
@@ -43,7 +47,7 @@ namespace FNF.Characters {
         }
 
         protected override void OnBeat() {
-            if (holding || GameplayVars.CurrentBeat % beatMod != 0) return;
+            if (allowDancing && (holding || GameplayVars.CurrentBeat % beatMod != 0)) return;
             Idle();
         }
 

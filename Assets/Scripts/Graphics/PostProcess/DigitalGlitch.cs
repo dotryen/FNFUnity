@@ -9,6 +9,9 @@ using UnityEngine.Rendering.Universal.PostProcessing;
 [VolumeComponentMenu("Glitch/Digital")]
 public sealed class DigitalGlitch : VolumeComponent {
     public ClampedFloatParameter intensity = new ClampedFloatParameter(0f, 0f, 1f);
+    [Header("Region")]
+    public FloatRangeParameter uRegion = new FloatRangeParameter(new Vector2(0, 1), 0, 1);
+    public FloatRangeParameter vRegion = new FloatRangeParameter(new Vector2(0, 1), 0, 1);
 }
 
 [CustomPostProcess("Digital Glitch", CustomPostProcessInjectionPoint.AfterPostProcess)]
@@ -25,6 +28,8 @@ public sealed class DigitalGlitchRenderer : CustomPostProcessRenderer {
         internal readonly static int Noise = Shader.PropertyToID("_NoiseTex");
         internal readonly static int Trash = Shader.PropertyToID("_TrashTex");
         internal readonly static int Intensity = Shader.PropertyToID("_Intensity");
+        internal readonly static int URegion = Shader.PropertyToID("_URegion");
+        internal readonly static int VRegion = Shader.PropertyToID("_VRegion");
     }
 
     public override bool visibleInSceneView => false;
@@ -54,6 +59,8 @@ public sealed class DigitalGlitchRenderer : CustomPostProcessRenderer {
         if (frameCount % 73 == 0) cmd.Blit(source, trashTex2);
 
         material.SetFloat(ShaderIDs.Intensity, component.intensity.value);
+        material.SetVector(ShaderIDs.URegion, component.uRegion.value);
+        material.SetVector(ShaderIDs.VRegion, component.vRegion.value);
 
         cmd.SetGlobalTexture(ShaderIDs.Noise, noiseTex);
         cmd.SetGlobalTexture(ShaderIDs.Trash, Random.value > 0.5f ? trashTex1 : trashTex2);
@@ -61,7 +68,6 @@ public sealed class DigitalGlitchRenderer : CustomPostProcessRenderer {
 
         CoreUtils.DrawFullScreen(cmd, material, destination);
 
-        // i thought this could cause issues when issuing the command lol
         RenderTexture.ReleaseTemporary(trashTex1);
         RenderTexture.ReleaseTemporary(trashTex2);
     }

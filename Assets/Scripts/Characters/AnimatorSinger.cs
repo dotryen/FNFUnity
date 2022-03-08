@@ -5,8 +5,8 @@ using UnityEngine;
 namespace FNF.Characters {
     public class AnimatorSinger : BaseSinger {
         [Header("Animation")]
-        [Tooltip("Should be the controller provided in the animations folder.")]
-        public AnimatorOverrideController controller;
+        [Tooltip("Should be identical or an override of the template controller.\nCheck Graphics/Animations folder.")]
+        public RuntimeAnimatorController controller;
         public Animator animator;
         [Space]
         public bool forceFps;
@@ -20,19 +20,7 @@ namespace FNF.Characters {
 
         private void Awake() {
             animator.runtimeAnimatorController = controller;
-
-            animationCache = new Dictionary<string, KeyValuePair<float, int>>(controller.overridesCount);
-            List<KeyValuePair<AnimationClip, AnimationClip>> pairs = new List<KeyValuePair<AnimationClip, AnimationClip>>(controller.overridesCount);
-
-            controller.GetOverrides(pairs);
-            foreach (var pair in pairs) {
-                if (pair.Value == null) continue;
-
-                float fps = pair.Value.frameRate;
-                int frameCount = Mathf.FloorToInt(pair.Value.length / (1f / fps));
-
-                animationCache.Add(pair.Key.name, new KeyValuePair<float, int>(fps, frameCount));
-            }
+            BuildAnimationCache();
         }
 
         protected override void Update() {
@@ -63,10 +51,42 @@ namespace FNF.Characters {
             timer = 0f;
         }
 
+        /// <summary>
+        /// Gets the length of an animation.
+        /// </summary>
+        /// <param name="name">Name of the animation.</param>
+        /// <param name="frameCount">Number of frames in the animation.</param>
+        /// <param name="fps">The fps of the animtion. (May not match the singer's fps)</param>
         public override void GetAnimLength(string name, out int frameCount, out float fps) {
             var pair = animationCache[name];
             fps = pair.Key;
             frameCount = pair.Value;
+        }
+
+        private void BuildAnimationCache() {
+            animationCache = new Dictionary<string, KeyValuePair<float, int>>();
+
+            if (controller is AnimatorOverrideController) {
+                AnimatorOverrideController overrideController = (AnimatorOverrideController)controller;
+                List<KeyValuePair<AnimationClip, AnimationClip>> pairs = new List<KeyValuePair<AnimationClip, AnimationClip>>(overrideController.overridesCount);
+
+                overrideController.GetOverrides(pairs);
+                foreach (var pair in pairs) {
+                    if (pair.Value == null) continue;
+
+                    float fps = pair.Value.frameRate;
+                    int frameCount = Mathf.FloorToInt(pair.Value.length / (1f / fps));
+
+                    animationCache.Add(pair.Key.name, new KeyValuePair<float, int>(fps, frameCount));
+                }
+            } else {
+                foreach (var animation in controller.animationClips) {
+                    float fps = animation.frameRate;
+                    int frameCount = Mathf.FloorToInt(animation.length / (1f / fps));
+
+                    animationCache.Add(animation.name, new KeyValuePair<float, int>(fps, frameCount));
+                }
+            }
         }
     }
 }

@@ -1,15 +1,17 @@
 Shader "Hidden/Glitch/Digital" {
 	HLSLINCLUDE
-		#include "Packages/com.yetman.render-pipelines.universal.postprocess/ShaderLibrary/Core.hlsl"
+		#include "../PostProcessLibrary/Core.hlsl"
 
-		TEXTURE2D_X(_MainTex);
 		TEXTURE2D_X(_NoiseTex);
 		TEXTURE2D_X(_TrashTex);
 		float _Intensity;
+		float2 _URegion;
+		float2 _VRegion;
 
 		float4 DigitalGlitchFrag(PostProcessVaryings i) : SV_Target {
 			UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 			float2 texcoord = UnityStereoTransformScreenSpaceTex(i.texcoord);
+			if (texcoord.x < _URegion.x || texcoord.x > _URegion.y || texcoord.y < _VRegion.x || texcoord.y > _VRegion.y) return LOAD_TEXTURE2D_X(_CameraColorTexture, texcoord * _ScreenSize.xy);
 
 			float4 glitch = LOAD_TEXTURE2D_X(_NoiseTex, texcoord * float2(64, 32));
 
@@ -20,7 +22,8 @@ Shader "Hidden/Glitch/Digital" {
 
 			// Displacement.
 			float2 uv = frac(texcoord + glitch.xy * w_d);
-			float4 source = LOAD_TEXTURE2D_X(_MainTex, uv * _ScreenSize.xy);
+
+			float4 source = LOAD_TEXTURE2D_X(_CameraColorTexture, uv * _ScreenSize.xy);
 
 			// Mix with trash frame.
 			float3 color = lerp(source, LOAD_TEXTURE2D_X(_TrashTex, uv * _ScreenSize.xy), w_f).rgb;

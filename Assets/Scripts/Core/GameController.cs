@@ -110,7 +110,8 @@ namespace FNF.Core {
             paused = false;
 
             gameplay.StartSong();
-            InvokeRepeating("UpdateDiscord", 1, 15);
+            // Rate limit is 5 updates per 20 seconds
+            InvokeRepeating("UpdateDiscord", 1, 5);
         }
 
         public void OnGameEnd() {

@@ -19,6 +19,7 @@ public class SongImportTool : EditorWindow {
     public const string SAMPLE_SCENE = "Assets/Scenes/SampleStage.unity";
 
     private string songData;
+    private string idOverride;
     private string instrumental;
     private string playerVocals;
     private string opponentVocals;
@@ -33,6 +34,7 @@ public class SongImportTool : EditorWindow {
 
     private void OnGUI() {
         WindowUtility.LocationField(ref songData, "Song Data", "Select Song Data", "", "json");
+        idOverride = EditorGUILayout.TextField("Song ID (Can be empty)", idOverride);
         EditorGUILayout.Space();
         WindowUtility.LocationField(ref instrumental, "Instrumentals", "Select audio", "", AUDIO_FORMAT);
         WindowUtility.LocationField(ref playerVocals, "Player Vocals", "Select audio", "", AUDIO_FORMAT);
@@ -61,7 +63,7 @@ public class SongImportTool : EditorWindow {
             songDifficulty = split[1];
         }
         
-        outputFolder = FOLDER + songName + "/";
+        outputFolder = FOLDER + (idOverride == string.Empty ? songName : idOverride) + "/";
         chartsFolder = outputFolder + SongAssets.CHARTS_FOLDER;
 
         Directory.CreateDirectory(outputFolder);
